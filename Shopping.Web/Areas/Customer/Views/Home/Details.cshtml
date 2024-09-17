@@ -1,0 +1,44 @@
+﻿@model ShoppingCart
+
+@* <div class="col mb-12"> *@
+
+<form method="post" asp-action="Details">
+
+    <div class="py-5">
+
+        @* <div class="card h-100"> *@
+        <div class="container px-4 my-4">
+            <input hidden asp-for="Id" />
+            <input hidden asp-for="ProID" />
+         
+            <img class="card-img-top" src="~/@Model.Product.Image" alt="" />
+            <div class="card-body p-4">
+                <div class="text-center">
+                    <h5 class="fw-bolder">@Model.Product.Name</h5>
+                    @Model.Product.Price
+                </div>
+                <div class="text-center">
+                    <h5 class="fw-bolder">@Model.Product.Description</h5>
+                    @Model.Product.Price
+                </div>
+
+                <div class="text-center">
+                    <h5 class="fw-bolder">@Model.Product.Category.Name</h5>
+
+                </div>
+
+
+            </div>
+            <input type="number" asp-for=@Model.Count class="form-control me-3" value="1" max="100" min="1" />
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                    
+                    <input type="submit" value="Add" class="btn btn-success" />
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

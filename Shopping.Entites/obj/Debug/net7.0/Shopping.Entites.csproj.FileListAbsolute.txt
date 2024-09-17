@@ -1,0 +1,24 @@
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\bin\Debug\net7.0\Shopping.Entites.deps.json
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\bin\Debug\net7.0\Shopping.Entites.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\bin\Debug\net7.0\Shopping.Entites.pdb
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.csproj.AssemblyReference.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.AssemblyInfoInputs.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.AssemblyInfo.cs
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.csproj.CoreCompileInputs.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\obj\Debug\net7.0\refint\Shopping.Entites.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.pdb
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Entites\obj\Debug\net7.0\ref\Shopping.Entites.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\bin\Debug\net7.0\Shopping.Entites.deps.json
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\bin\Debug\net7.0\Shopping.Entites.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\bin\Debug\net7.0\Shopping.Entites.pdb
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.csproj.AssemblyReference.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.AssemblyInfoInputs.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.AssemblyInfo.cs
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.csproj.CoreCompileInputs.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\refint\Shopping.Entites.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.pdb
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\ref\Shopping.Entites.dll

@@ -1,0 +1,47 @@
+﻿@model Product
+
+
+
+<div class="row">
+
+    <div class="col-7">
+        <div class="form-group">
+            <label class="text-danger" asp-for="Name"></label>
+            <input disabled asp-for="Name" class="form-control" />
+
+        </div>
+        <div class="form-group">
+            <label class="text-danger" asp-for="Description"></label>
+            <input disabled asp-for="Description" class="form-control" />
+
+        </div>
+        <div class="form-group">
+            <label class="text-danger" asp-for="Price"></label>
+            <input disabled asp-for="Price" class="form-control" />
+
+        </div>
+
+        <div class="form-group">
+            <label class="text-danger" asp-for="Price"></label>
+            <input disabled asp-for="Price" class="form-control" />
+
+        </div>
+        <div class="form-group">
+            <label class="text-danger"> Category Name</label>
+            <input disabled asp-for="Category.Name" class="form-control" />
+
+        </div>
+
+    </div>
+    <div class="col-5">
+        <div class="form-group">
+
+            <label class="text-danger" asp-for="Image"></label>
+            <img src="~/@Model.Image" class='img-fluid w-100' asp-for="Product.Image" class="form-control" />
+
+        </div>
+    </div>
+
+
+</div>
+<a asp-action="Index" class="btn btn-dark">Back To List</a>

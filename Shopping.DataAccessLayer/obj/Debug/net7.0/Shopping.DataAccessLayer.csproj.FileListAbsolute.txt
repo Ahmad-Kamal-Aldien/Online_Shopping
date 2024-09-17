@@ -1,0 +1,34 @@
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.DataAccessLayer.deps.json
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.DataAccessLayer.runtimeconfig.json
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.DataAccessLayer.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.DataAccessLayer.pdb
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.Entites.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.Entites.pdb
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.csproj.AssemblyReference.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.AssemblyInfoInputs.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.AssemblyInfo.cs
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.FEA16237.Up2Date
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\refint\Shopping.DataAccessLayer.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.pdb
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.genruntimeconfig.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\ref\Shopping.DataAccessLayer.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.DataAccessLayer.deps.json
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.DataAccessLayer.runtimeconfig.json
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.DataAccessLayer.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.DataAccessLayer.pdb
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.Entites.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\bin\Debug\net7.0\Shopping.Entites.pdb
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.csproj.AssemblyReference.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.AssemblyInfoInputs.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.AssemblyInfo.cs
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.FEA16237.Up2Date
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\refint\Shopping.DataAccessLayer.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.pdb
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.genruntimeconfig.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\ref\Shopping.DataAccessLayer.dll

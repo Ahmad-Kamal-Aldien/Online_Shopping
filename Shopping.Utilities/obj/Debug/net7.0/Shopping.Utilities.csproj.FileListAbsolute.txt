@@ -1,0 +1,24 @@
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\bin\Debug\net7.0\Shopping.Utilities.deps.json
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\bin\Debug\net7.0\Shopping.Utilities.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\bin\Debug\net7.0\Shopping.Utilities.pdb
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.csproj.AssemblyReference.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.AssemblyInfoInputs.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.AssemblyInfo.cs
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.csproj.CoreCompileInputs.cache
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\refint\Shopping.Utilities.dll
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.pdb
+E:\Projects\Projects\VS2022\Asp\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\ref\Shopping.Utilities.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\bin\Debug\net7.0\Shopping.Utilities.deps.json
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\bin\Debug\net7.0\Shopping.Utilities.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\bin\Debug\net7.0\Shopping.Utilities.pdb
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.csproj.AssemblyReference.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.AssemblyInfoInputs.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.AssemblyInfo.cs
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.csproj.CoreCompileInputs.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\refint\Shopping.Utilities.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\Shopping.Utilities.pdb
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Utilities\obj\Debug\net7.0\ref\Shopping.Utilities.dll

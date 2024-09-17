@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ExstraUserData>
+
+
+    <br />
+    <br />
+<a style="align-items:flex-end" href="/Identity/Account/Register" class="btn btn-dark">Add New User</a>
+
+<br />
+<br />
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">User Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Status Lock</th>
+            <th scope="col">Delete</th>
+      
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>@item.UserName</td>
+                <td>@item.Email</td>
+                @if(item.LockoutEnd==null | item.LockoutEnd < DateTime.Now)
+                {
+                    <td>
+                        <a asp-action="StatusLock" asp-route-Id="@item.Id" class="btn btn-success">
+                            <i class="fa-solid fa-unlock"></i>
+                        </a>
+                    </td>
+                }
+                else{
+                <td>
+                        <a asp-action="StatusLock" asp-route-Id="@item.Id" class="btn btn-success">
+                            <i class="fa-solid fa-lock"></i>
+                    </a>
+                </td>
+                }
+               
+                  
+              
+                <td><a asp-action="" class="btn btn-danger">Delete</a> </td>
+
+              
+            </tr>
+
+        }
+    </tbody>
+</table>

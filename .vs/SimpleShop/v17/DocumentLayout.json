@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F55250ED-1B6B-4345-A016-3F48E130CF59}|Shopping.Entites\\Shopping.Entites.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.entites\\model\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55250ED-1B6B-4345-A016-3F48E130CF59}|Shopping.Entites\\Shopping.Entites.csproj|solutionrelative:shopping.entites\\model\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1548FFB8-B175-4A16-9BE2-5A9CC6F36E6E}|Shopping.DataAccessLayer\\Shopping.DataAccessLayer.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.dataaccesslayer\\repositorys\\repository\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1548FFB8-B175-4A16-9BE2-5A9CC6F36E6E}|Shopping.DataAccessLayer\\Shopping.DataAccessLayer.csproj|solutionrelative:shopping.dataaccesslayer\\repositorys\\repository\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\areas\\customer\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\areas\\customer\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderHeader.cs",
+              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Entites\\Model\\OrderHeader.cs",
+              "RelativeDocumentMoniker": "Shopping.Entites\\Model\\OrderHeader.cs",
+              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Entites\\Model\\OrderHeader.cs",
+              "RelativeToolTip": "Shopping.Entites\\Model\\OrderHeader.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAkwCoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:38:52.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.DataAccessLayer\\Repositorys\\Repository\\CartRepository.cs",
+              "RelativeDocumentMoniker": "Shopping.DataAccessLayer\\Repositorys\\Repository\\CartRepository.cs",
+              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.DataAccessLayer\\Repositorys\\Repository\\CartRepository.cs",
+              "RelativeToolTip": "Shopping.DataAccessLayer\\Repositorys\\Repository\\CartRepository.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T14:15:26.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "Shopping.Web\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "Shopping.Web\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T13:09:27.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Shopping.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Shopping.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAO8AAAAAAAAAAAAAAPgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:08:31.28Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
