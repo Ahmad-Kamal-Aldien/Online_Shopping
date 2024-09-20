@@ -18,6 +18,7 @@ D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.AssemblyInfoInputs.cache
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.AssemblyInfo.cs
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.csproj.CoreCompileInputs.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.sourcelink.json
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\refint\Shopping.Entites.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Entites\obj\Debug\net7.0\Shopping.Entites.pdb

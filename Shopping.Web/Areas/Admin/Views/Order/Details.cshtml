@@ -1,0 +1,178 @@
+﻿
+@model OrderViewModel;
+<form class="row" asp-action="Update">
+
+
+    <input type="hidden" asp-for="OrderHeader.ID" />
+    <div class="col-7">
+        <h3>
+            PickUp Details</h3>
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input asp-for="OrderHeader.Name" type="text" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Phone</label>
+                <div class="col-sm-10">
+                    <input asp-for="OrderHeader.PhoneNumber" type="text" class="form-control">
+                </div>
+            </div>
+
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Address</label>
+                <div class="col-sm-10">
+                    <input asp-for="OrderHeader.Address" type="text" class="form-control">
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">City</label>
+                <div class="col-sm-10">
+                    <input asp-for="OrderHeader.City" type="text" class="form-control">
+                </div>
+            </div>
+
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input asp-for="OrderHeader.UserData.Email" type="text" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Order Date</label>
+                <div class="col-sm-10">
+      
+                    @* <input value="@Model.OrderHeader.OrderDate?.ToShortDateString()" type="text" class="form-control"> *@
+                    @* <input value="@Model.OrderHeader.OrderDate" type="text" class="form-control"> *@
+
+                    <input asp-for="@Model.OrderHeader.OrderDate" type="text" class="form-control">
+
+                </div>
+            </div>
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Carier</label>
+                <div class="col-sm-10">
+                    <input asp-for="OrderHeader.Carrier" type="text" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Tracking Number</label>
+                <div class="col-sm-10">
+                    <input asp-for="OrderHeader.TrackingNumber" type="password" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Shipping Date</label>
+                <div class="col-sm-10">
+                    @* <input type="text" value="@Model.OrderHeader.ShippingDate?.ToShortDateString()" class="form-control"> *@
+                    <input type="text" asp-for="@Model.OrderHeader.ShippingDate" class="form-control">
+
+                </div>
+            </div>
+
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Session Id</label>
+                <div class="col-sm-10">
+                    <input asp-for="OrderHeader.SessionID" type="text" class="form-control">
+                </div>
+            </div>
+
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Payment Intent Id</label>
+                <div class="col-sm-10">
+                    <input asp-for="OrderHeader.PaymentIntentId" type="password" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Payment Date</label>
+                <div class="col-sm-10">
+                    @* <input value="@Model.OrderHeader.PaymentDate?.ToShortDateString()" type="password" class="form-control"> *@
+                    @* <input value="@Model.OrderHeader.PaymentDate" type="password" class="form-control"> *@
+
+                    <input asp-for="@Model.OrderHeader.PaymentDate" type="password" class="form-control">
+
+
+                </div>
+            </div>
+
+
+
+            <div class="form-group row my-3">
+                <label class="col-sm-2 col-form-label">Payment Status</label>
+                <div class="col-sm-10">
+                    <input type="text" asp-for="OrderHeader.PaymentStatus" class="form-control">
+                </div>
+            </div>
+
+        <button class="btn btn-primary col-12" >Update  Details</button>
+
+    </div>
+
+    <div class="col-5">
+        <h3>Order Summary</h3>
+       
+        <button class="btn btn-primary">"@Model.OrderHeader.orderStatus" </button>
+        
+
+
+        @foreach (var item in Model.OrderDetails)
+        {
+            <div class="border">
+
+
+                <div class="d-flex  justify-content-between">
+                    <p class="text-info font-weight-bold">@item.Product.Name</p>
+                    <p class="text-success">
+                        @{
+                            var result = item.Price * item.Count;
+                        }  @result
+                    </p>
+
+                </div>
+                <p>Price @item.Price</p>
+                <p>Count  @item.Count</p>
+            </div>
+        }
+
+    @*     <button type="button" class="btn btn-secondary col-12">Total @Model.OrderHeader.total
+            
+                   
+        </button>
+ *@
+
+
+
+
+    </div>
+
+</form>

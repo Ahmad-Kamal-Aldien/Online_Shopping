@@ -6,6 +6,8 @@ using Shopping.DataAccessLayer.Repositorys.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Shopping.Utilities;
+using Stripe;
+using Shopping.Utilities.StripeInfo;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,13 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDBContext>(
 op => op.UseSqlServer(builder.Configuration.GetConnectionString("conn")));
+
+
+
+//To Make Stripe
+
+//builder.Services.Configure<StripeInfo>((builder.Configuration.GetSection("stripe")));
+
 
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDBContext>();
 
@@ -41,6 +50,14 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
+
+////To Make Stripe
+//StripeConfiguration.ApiKey = builder.Configuration.GetSection("Secritkey").Get<string>();
+
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XrK18PLK64lLVDtukKhnSuqVccTXOyCXR0ChwvEYxx03rblU3wm/PuKYwZi6W/iZwZY5YQPDOLFRaL5FmSfYPA==",
+  "dgSpecHash": "hRUUxxDd5srRMuAPkdbhzJK/MXpdK7J7cNlnm/+yOM25hoDN0HADVN/f3Io+28S0f6CoHHd/Fjlcl/DckAcx3A==",
   "success": true,
   "projectFilePath": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Shopping.Web.csproj",
   "expectedPackageFiles": [
@@ -190,6 +190,7 @@
     "C:\\Users\\Ahmad\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.4\\sqlitepclraw.provider.e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\stripe.net\\45.13.0\\stripe.net.45.13.0.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

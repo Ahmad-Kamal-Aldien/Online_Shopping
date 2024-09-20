@@ -26,6 +26,7 @@ D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.AssemblyInfoInputs.cache
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.AssemblyInfo.cs
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.sourcelink.json
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.FEA16237.Up2Date
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\Shopping.DataAccessLayer.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.DataAccessLayer\obj\Debug\net7.0\refint\Shopping.DataAccessLayer.dll

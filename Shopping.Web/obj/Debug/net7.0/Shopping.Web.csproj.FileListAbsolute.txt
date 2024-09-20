@@ -376,6 +376,7 @@ D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\SQLitePCLRaw.core.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\Stripe.net.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\System.CodeDom.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\System.Composition.AttributedModel.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\System.Composition.Convention.dll
@@ -580,6 +581,7 @@ D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\obj\Debug\net7.0\Shopping.Web.MvcApplicationPartsAssemblyInfo.cache
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\obj\Debug\net7.0\Shopping.Web.RazorAssemblyInfo.cache
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\obj\Debug\net7.0\Shopping.Web.RazorAssemblyInfo.cs
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\obj\Debug\net7.0\Shopping.Web.sourcelink.json
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\obj\Debug\net7.0\staticwebassets.build.json
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\obj\Debug\net7.0\staticwebassets.development.json
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\obj\Debug\net7.0\staticwebassets\msbuild.Shopping.Web.Microsoft.AspNetCore.StaticWebAssets.props

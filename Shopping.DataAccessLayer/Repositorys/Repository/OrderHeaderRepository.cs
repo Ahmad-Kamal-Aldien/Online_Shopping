@@ -27,9 +27,23 @@ namespace Shopping.DataAccessLayer.Repositorys.Repository
             //GetIDFromOrderHeader
             var pro = applicationDBContext.orderHeaders.FirstOrDefault(x=>x.ID== orderHeader.ID);
             pro.Name= orderHeader.Name;
+
+
           
+
             applicationDBContext.orderHeaders.Update(pro);
 
+        }
+
+        public void UpdateStatusOrder(int id, string orderStatus, string paymentStatus)
+        {
+            var order = applicationDBContext.orderHeaders.FirstOrDefault(x=>x.ID==id);
+            if (order != null)
+            {
+                order.orderStatus = orderStatus;
+                order.PaymentDate = DateTime.Now;
+                order.PaymentStatus= paymentStatus;
+            }
         }
     }
 }

@@ -11,5 +11,9 @@ namespace Shopping.DataAccessLayer.Repositorys.IRepository
     {
         //Category category
         void Update(OrderHeader orderHeader);
+
+        //Update Status(Order And Payment)
+
+        void UpdateStatusOrder(int id,string orderStatus,string paymentStatus);
     }
 }

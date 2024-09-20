@@ -34,6 +34,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/MY Projects  And Learning/CV From Scratch/2024/Full-Stack/SimpleShop/Shopping.Web/Areas/Admin/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MY Projects  And Learning/CV From Scratch/2024/Full-Stack/SimpleShop/Shopping.Web/Areas/Admin/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/MY Projects  And Learning/CV From Scratch/2024/Full-Stack/SimpleShop/Shopping.Web/Areas/Admin/Views/Product/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,6 +84,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/MY Projects  And Learning/CV From Scratch/2024/Full-Stack/SimpleShop/Shopping.Web/Areas/Customer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MY Projects  And Learning/CV From Scratch/2024/Full-Stack/SimpleShop/Shopping.Web/Areas/Customer/Views/Home/orderconfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxvcmRlcmNvbmZpcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/MY Projects  And Learning/CV From Scratch/2024/Full-Stack/SimpleShop/Shopping.Web/Areas/Customer/_ViewImports.cshtml]

@@ -330,6 +330,9 @@ namespace Shopping.DataAccessLayer.Migrations
                     b.Property<DateTime?>("ShippingDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("TrackingNumber")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("orderStatus")
                         .HasColumnType("nvarchar(max)");
 

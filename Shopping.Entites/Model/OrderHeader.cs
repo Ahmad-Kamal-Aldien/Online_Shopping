@@ -17,7 +17,7 @@ namespace Shopping.Entites.Model
         [ForeignKey("NameUserID")]
         [ValidateNever]
         public ExstraUserData UserData { get; set; }
-        public DateTime OrderDate { get; set; }
+        public DateTime? OrderDate { get; set; }
         public DateTime? ShippingDate { get; set; }
 
         public decimal total {  get; set; }
@@ -43,6 +43,10 @@ namespace Shopping.Entites.Model
         public string? SessionID { get;set; }
 
         public string? PaymentIntentId { get; set; }
+
+
+
+        public string? TrackingNumber { get; set; }
 
 
     }
