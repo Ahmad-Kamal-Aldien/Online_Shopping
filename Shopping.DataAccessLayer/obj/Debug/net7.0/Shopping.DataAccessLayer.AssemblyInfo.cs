@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shopping.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b07fe680061c3140084691dcb0a3c35116b895ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04d91024ec1d53e4aa88eebf436729cd1c35fff8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shopping.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shopping.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

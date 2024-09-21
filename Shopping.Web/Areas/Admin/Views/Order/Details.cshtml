@@ -1,5 +1,7 @@
 ﻿
-@model OrderViewModel;
+@model OrderViewModel
+@using Shopping.Utilities;
+
 <form class="row" asp-action="Update">
 
 
@@ -72,7 +74,7 @@
             <div class="form-group row my-3">
                 <label class="col-sm-2 col-form-label">Carier</label>
                 <div class="col-sm-10">
-                    <input asp-for="OrderHeader.Carrier" type="text" class="form-control">
+                <input id="Carrier" asp-for="OrderHeader.Carrier" type="text" class="form-control">
                 </div>
             </div>
 
@@ -80,7 +82,7 @@
             <div class="form-group row my-3">
                 <label class="col-sm-2 col-form-label">Tracking Number</label>
                 <div class="col-sm-10">
-                    <input asp-for="OrderHeader.TrackingNumber" type="password" class="form-control">
+                <input id="TrackingNumber" asp-for="OrderHeader.TrackingNumber" type="password" class="form-control">
                 </div>
             </div>
 
@@ -141,7 +143,11 @@
     <div class="col-5">
         <h3>Order Summary</h3>
        
-        <button class="btn btn-primary">"@Model.OrderHeader.orderStatus" </button>
+        <div class="p-3 mb-2 bg-info text-white">
+
+            <p class="text-center"> @Model.OrderHeader.orderStatus</p>
+            
+        </div>
         
 
 
@@ -170,9 +176,103 @@
         </button>
  *@
 
+        @if (User.IsInRole(SD.Admin))
+        {
+            @if (Model.OrderHeader.orderStatus == SD.Approve)
+            {
+                <input type="submit" class="btn btn-primary my-2" asp-action="UpdateToProcess" value="Start Process" />
 
+            }
+            @if (Model.OrderHeader.orderStatus == SD.Proccessing)
+            {
+                @* <input type="submit" class="btn btn-success my-2" onclick="return CheckDataBeforSave" asp-action="UpdateToShiping" value="Start Ship" /> *@
 
+                <input type="submit" class="btn btn-success my-2" onclick="return CheckDataBeforSave()" asp-action="UpdateToShiping" value="Start Ship" />
+
+            }
+            @if (Model.OrderHeader.orderStatus != SD.Cancel || Model.OrderHeader.orderStatus != SD.Refund)
+            {
+                <input type="submit" class="btn btn-danger my-2" asp-action="Cancel" value="Cancel Process" />
+
+            }
+
+        }
+        <div>
+   
+ </div>
 
     </div>
 
 </form>
+
+@* @section Scripts{
+    <script>
+
+        function CheckDataBeforSave(){
+            var TrackingNumber = document.getElementById("TrackingNumber");
+            var Carrier = document.getElementById("Carrier");
+
+            if (TrackingNumber.value = '') {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                });
+                return  false;
+
+            }
+
+            if (Carrier.value = '') {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                });
+                return false;
+
+            }
+            return true;
+        }
+        
+
+
+    </script>
+}
+ *@
+
+@section Scripts {
+    <script>
+
+        function CheckDataBeforSave() {
+         
+
+            if (document.getElementById("TrackingNumber").value == '') {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                });
+                return false;
+
+            }
+
+            if (document.getElementById("Carrier").value == '') {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                });
+                return false;
+
+            }
+            return true;
+        }
+
+
+
+    </script>
+}

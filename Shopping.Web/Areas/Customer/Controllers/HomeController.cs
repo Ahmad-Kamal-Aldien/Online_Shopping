@@ -143,9 +143,11 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
 		CartViewModel cartViewModel;
 		[HttpPost]
-        
 
-		public IActionResult CheckOut(OrderHeader orderHeader)
+        //Show Stripe And Fill Data  Customer Not Pay  
+        //Redirect To Function orderconfirm
+
+        public IActionResult CheckOut(OrderHeader orderHeader)
         {
            
             var user = (ClaimsIdentity)User.Identity;
@@ -170,7 +172,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
             cartViewModel.orderheader.Address= orderHeader.Address;
 
-            cartViewModel.orderheader.PaymentStatus =SD.Pending;
+            cartViewModel.orderheader.PaymentStatus = SD.Pending;
             cartViewModel.orderheader.orderStatus = SD.Pending;
 
 
@@ -265,19 +267,22 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
             return RedirectToAction("Index");
         }
+        //Customer Pay Money and Change Status From Pending To Approve
         public IActionResult orderconfirm(int id)
         {
             OrderHeader orderHeader = unitOfWork.orderHeader.GetFirst(x => x.ID == id);
             var service = new Stripe.Checkout.SessionService();
             Stripe.Checkout.Session session = service.Get(orderHeader.SessionID);
+            orderHeader.PaymentIntentId = session.PaymentIntentId;
+
             if (session.PaymentStatus.ToLower() == "paid")
             {
-                unitOfWork.orderHeader.UpdateStatusOrder(id,SD.Approve , SD.Approve);
+                unitOfWork.orderHeader.UpdateStatusOrder(id, SD.Approve, SD.Approve);
 
-				//PaymentIntentId Applay After 
-				cartViewModel.orderheader.PaymentIntentId = session.PaymentIntentId;
+                //PaymentIntentId Applay After 
+                //orderHeader.PaymentIntentId = session.PaymentIntentId;
 
-				unitOfWork.complete();
+                unitOfWork.complete();
 
                
                

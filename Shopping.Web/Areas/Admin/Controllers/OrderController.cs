@@ -2,6 +2,8 @@
 using Shopping.DataAccessLayer.Repositorys.IRepository;
 using Shopping.Entites.Model;
 using Shopping.Entites.Model.ViewModels;
+using Shopping.Utilities;
+using Stripe;
 using System.Collections.Generic;
 
 namespace Shopping.Web.Areas.Admin.Controllers
@@ -73,6 +75,55 @@ namespace Shopping.Web.Areas.Admin.Controllers
        
             UnitOfWork.complete();
 
+            TempData["Edit"] = "Data Updated Success";
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult UpdateToProcess()
+        {
+            UnitOfWork.orderHeader.UpdateStatusOrder(orderViewModel.OrderHeader.ID, SD.Proccessing,SD.Approve);
+            UnitOfWork.complete();
+            return RedirectToAction(nameof(Index));
+        }
+
+        //Add Exstra Data As Carier And Tracking Num 
+
+        public IActionResult UpdateToShiping()
+        {
+            var order = UnitOfWork.orderHeader.GetFirst(x => x.ID == orderViewModel.OrderHeader.ID);
+            order.TrackingNumber = orderViewModel.OrderHeader.TrackingNumber;
+            order.Carrier = orderViewModel.OrderHeader.Carrier;
+            order.orderStatus = SD.Shipped;
+            order.ShippingDate = DateTime.Now;
+            UnitOfWork.orderHeader.Update(order);
+
+
+            UnitOfWork.complete();
+            return RedirectToAction(nameof(Index));
+        }
+
+        //Two Status For Payment (Approve Or Appending)
+        public IActionResult Cancel()
+        {
+            var order = UnitOfWork.orderHeader.GetFirst(x => x.ID == orderViewModel.OrderHeader.ID);
+
+            if (order.PaymentStatus == SD.Approve)
+            {
+                var option = new RefundCreateOptions
+                {
+                    Reason = RefundReasons.RequestedByCustomer,
+                    PaymentIntent = order.PaymentIntentId
+                };
+                var services = new RefundService();
+                Refund refund = services.Create(option);
+                UnitOfWork.orderHeader.UpdateStatusOrder(order.ID,SD.Cancel,SD.Refund);
+            }
+            if(order.PaymentStatus == SD.Pending)
+            {
+                UnitOfWork.orderHeader.UpdateStatusOrder(order.ID, SD.Cancel, SD.Cancel);
+
+            }
+            UnitOfWork.complete();
             TempData["Edit"] = "Data Updated Success";
             return RedirectToAction(nameof(Index));
         }

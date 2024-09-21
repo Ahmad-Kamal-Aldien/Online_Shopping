@@ -1,4 +1,5 @@
-﻿<html lang="en">
+﻿@using Shopping.Utilities;
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +14,9 @@
     <link rel="stylesheet" href="//cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
@@ -30,6 +34,13 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
                 </li>
+                @if (User.IsInRole(SD.Admin))
+                {
+                    <li>
+                        <a href="/admin/Order/index">Order Management</a>
+                    </li>
+                }
+            
             </ul>
 
             <!-- Right navbar links -->
