@@ -98,8 +98,11 @@ namespace Shopping.Web.Areas.Customer.Controllers
             if (OldData == null)
             {
                 unitOfWork.cart.Add(shoppingCart);
-                //After Add 
-                //HttpContext.Session.SetInt32("SessionCountCart",);
+
+             
+               
+
+
 
             }
             else
@@ -113,6 +116,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
             }
 
             unitOfWork.complete();
+            HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == claim.Value).ToList().Count());
 
             return RedirectToAction("Index");
 
@@ -370,6 +374,8 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
 
             unitOfWork.complete();
+            HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == claim.Value).ToList().Count());
+
 
             return RedirectToAction("Index");
         }

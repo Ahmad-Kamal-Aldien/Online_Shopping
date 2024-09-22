@@ -33,7 +33,7 @@ namespace Shopping.Utilities
         public const string Shipped = "Shipped";
 
 
-        public const string SessionKey = "ShoppingCartSession";
+        public const string SessionCountProduct = "countProduct";
 
 
 
