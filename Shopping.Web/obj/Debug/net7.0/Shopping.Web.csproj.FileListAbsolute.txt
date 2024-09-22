@@ -392,6 +392,8 @@ D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\System.Security.Permissions.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\X.PagedList.dll
+D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\af\Humanizer.resources.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\ar\Humanizer.resources.dll
 D:\MY Projects  And Learning\CV From Scratch\2024\Full-Stack\SimpleShop\Shopping.Web\bin\Debug\net7.0\az\Humanizer.resources.dll

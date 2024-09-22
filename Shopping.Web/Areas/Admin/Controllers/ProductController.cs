@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Shopping.DataAccessLayer.Repositorys.IRepository;
 using Shopping.Entites.Model;
 using Shopping.Entites.Model.ViewModels;
+using X.PagedList;
 
 namespace Shopping.Web.Areas.Admin.Controllers
 {
@@ -20,6 +21,8 @@ namespace Shopping.Web.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+           
+
             return View(UnitOfWork.product.Get());
         }
         [HttpGet]

@@ -16,7 +16,8 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.12",
           "Shopping.DataAccessLayer": "1.0.0",
           "Shopping.Utilities": "1.0.0",
-          "Stripe.net": "45.13.0"
+          "Stripe.net": "45.13.0",
+          "X.PagedList.Mvc.Core": "10.2.1"
         },
         "runtime": {
           "Shopping.Web.dll": {}
@@ -3023,6 +3024,25 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "X.PagedList/10.2.1": {
+        "runtime": {
+          "lib/net6.0/X.PagedList.dll": {
+            "assemblyVersion": "10.2.1.0",
+            "fileVersion": "10.2.1.0"
+          }
+        }
+      },
+      "X.PagedList.Mvc.Core/10.2.1": {
+        "dependencies": {
+          "X.PagedList": "10.2.1"
+        },
+        "runtime": {
+          "lib/net6.0/X.PagedList.Mvc.Core.dll": {
+            "assemblyVersion": "10.2.1.0",
+            "fileVersion": "10.2.1.0"
+          }
+        }
+      },
       "Shopping.DataAccessLayer/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.18",
@@ -4977,6 +4997,20 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "X.PagedList/10.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SS2rDErBq4fj6WW7sRb5QHipDjjVjDY3TZEJyx8MjXTEJZ4jrJ1Iks/QVOegkQ2f3JxeXIrkGdsOIKbVEtQnXQ==",
+      "path": "x.pagedlist/10.2.1",
+      "hashPath": "x.pagedlist.10.2.1.nupkg.sha512"
+    },
+    "X.PagedList.Mvc.Core/10.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X8lUQH19qnFPEvNcrHK3GT120p3KhZfIA1y6cKWjzzMZ5/jm5KEoaf4cWDnwAw1QlTVf53JGeBn4Kgogk/zOdA==",
+      "path": "x.pagedlist.mvc.core/10.2.1",
+      "hashPath": "x.pagedlist.mvc.core.10.2.1.nupkg.sha512"
     },
     "Shopping.DataAccessLayer/1.0.0": {
       "type": "project",

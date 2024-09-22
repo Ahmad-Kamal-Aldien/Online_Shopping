@@ -13,6 +13,7 @@ using System.Security.Claims;
 
 using Stripe.Checkout;
 using Microsoft.Extensions.Options;
+using X.PagedList;
 
 namespace Shopping.Web.Areas.Customer.Controllers
 {
@@ -27,13 +28,15 @@ namespace Shopping.Web.Areas.Customer.Controllers
             unitOfWork = _unitOfWork;
 
         }
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-          
-            
-           
 
-            return View(unitOfWork.product.Get());
+            var pagenumber = page ?? 1;
+            int pagesize = 8;
+
+
+
+            return View(unitOfWork.product.Get().ToPagedList(pagenumber, pagesize));
         }
 
         [HttpGet]
