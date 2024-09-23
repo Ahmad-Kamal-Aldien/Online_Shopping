@@ -3,48 +3,44 @@
   "WorkspaceRootPath": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\areas\\admin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\areas\\admin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1548FFB8-B175-4A16-9BE2-5A9CC6F36E6E}|Shopping.DataAccessLayer\\Shopping.DataAccessLayer.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.dataaccesslayer\\repositorys\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1548FFB8-B175-4A16-9BE2-5A9CC6F36E6E}|Shopping.DataAccessLayer\\Shopping.DataAccessLayer.csproj|solutionrelative:shopping.dataaccesslayer\\repositorys\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\areas\\admin\\views\\category\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\areas\\admin\\views\\category\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\views\\shared\\_customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\views\\shared\\_customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\views\\shared\\_customerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\views\\shared\\_customerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\views\\shared\\_notification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\views\\shared\\_notification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|d:\\my projects  and learning\\cv from scratch\\2024\\full-stack\\simpleshop\\shopping.web\\areas\\admin\\views\\category\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74CFB292-D93D-4C70-9301-363216FAC55E}|Shopping.Web\\Shopping.Web.csproj|solutionrelative:shopping.web\\areas\\admin\\views\\category\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,37 +50,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderHeaderRepository.cs",
+              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.DataAccessLayer\\Repositorys\\Repository\\OrderHeaderRepository.cs",
+              "RelativeDocumentMoniker": "Shopping.DataAccessLayer\\Repositorys\\Repository\\OrderHeaderRepository.cs",
+              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.DataAccessLayer\\Repositorys\\Repository\\OrderHeaderRepository.cs",
+              "RelativeToolTip": "Shopping.DataAccessLayer\\Repositorys\\Repository\\OrderHeaderRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:03:02.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "Shopping.Web\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "Shopping.Web\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "ViewState": "AQIAAEwAAAAAAAAAAAASwFUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T07:58:50.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Shopping.Web\\appsettings.json",
+              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\appsettings.json",
+              "RelativeToolTip": "Shopping.Web\\appsettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-22T22:10:39.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Shopping.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Shopping.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACQBAAAAAAAAAADwvy8BAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T21:27:27.601Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Shopping.Web\\Program.cs",
+              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Program.cs",
+              "RelativeToolTip": "Shopping.Web\\Program.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T21:24:18.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "Shopping.Web\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "RelativeToolTip": "Shopping.Web\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T20:48:17.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T20:48:17.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "Shopping.Web\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "Shopping.Web\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T19:21:34.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Add.cshtml",
               "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Admin\\Views\\Category\\Add.cshtml",
               "RelativeDocumentMoniker": "Shopping.Web\\Areas\\Admin\\Views\\Category\\Add.cshtml",
@@ -92,64 +135,23 @@
               "RelativeToolTip": "Shopping.Web\\Areas\\Admin\\Views\\Category\\Add.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAiwCcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T19:17:34.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T19:17:34.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Shopping.Web\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Shopping.Web\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T19:17:29.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "OrderController.cs",
               "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Admin\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Shopping.Web\\Areas\\Admin\\Controllers\\OrderController.cs",
               "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Areas\\Admin\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Shopping.Web\\Areas\\Admin\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAUwGAAAAAsAAAA",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAswHoAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T17:50:39.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T17:50:39.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Shopping.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Shopping.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T17:51:58.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Notification.cshtml",
-              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_Notification.cshtml",
-              "RelativeDocumentMoniker": "Shopping.Web\\Views\\Shared\\_Notification.cshtml",
-              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_Notification.cshtml",
-              "RelativeToolTip": "Shopping.Web\\Views\\Shared\\_Notification.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T17:51:57.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Shopping.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -157,12 +159,11 @@
               "RelativeToolTip": "Shopping.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T17:51:57.209Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T17:51:57.209Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Shopping.Web\\Views\\Shared\\_Layout.cshtml",
@@ -170,34 +171,7 @@
               "RelativeToolTip": "Shopping.Web\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAACYAAAAAAAAAAAASwDAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T17:51:38.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_CustomerLayout.cshtml",
-              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_CustomerLayout.cshtml",
-              "RelativeDocumentMoniker": "Shopping.Web\\Views\\Shared\\_CustomerLayout.cshtml",
-              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_CustomerLayout.cshtml",
-              "RelativeToolTip": "Shopping.Web\\Views\\Shared\\_CustomerLayout.cshtml",
-              "ViewState": "AQIAAP8AAAAAAAAAAAASwAkBAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T17:51:22.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Customer.cshtml",
-              "DocumentMoniker": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_Customer.cshtml",
-              "RelativeDocumentMoniker": "Shopping.Web\\Views\\Shared\\_Customer.cshtml",
-              "ToolTip": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\Views\\Shared\\_Customer.cshtml",
-              "RelativeToolTip": "Shopping.Web\\Views\\Shared\\_Customer.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAASwDEAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T17:51:16.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T17:51:38.088Z"
             }
           ]
         }

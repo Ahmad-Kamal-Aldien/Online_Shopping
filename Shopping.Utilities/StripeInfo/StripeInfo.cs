@@ -8,7 +8,7 @@ namespace Shopping.Utilities.StripeInfo
 {
     public class StripeInfo
     {
-        public string Secritkey { get; set; }
-        public string publishableKey { get; set; }
+        public string SecretKey { get; set; }
+        public string PublishableKey { get; set; }
     }
 }

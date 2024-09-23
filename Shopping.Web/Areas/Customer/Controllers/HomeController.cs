@@ -221,22 +221,36 @@ namespace Shopping.Web.Areas.Customer.Controllers
                 //Stripe Api 
                 //Stripe Api 
 
-                //string domainName = "https://localhost:7133/";
+                //var domain = "https://localhost:7133/";
 
+
+                ////var options = new Stripe.Checkout.SessionCreateOptions
+                ////{
+                ////    LineItems = new List<SessionLineItemOptions>(),
+                ////    Mode = "payment",
+                ////    SuccessUrl = domainName + $"customer/home/orderconfirm?id={cartViewModel.orderheader.ID}",
+                ////    CancelUrl = domainName + $"customer/cart/index",
+                ////};
 
                 //var options = new Stripe.Checkout.SessionCreateOptions
                 //{
+                //    PaymentMethodTypes=new List<string>
+                //    {
+                //        "card",
+                //    },
+
                 //    LineItems = new List<SessionLineItemOptions>(),
                 //    Mode = "payment",
-                //    SuccessUrl = domainName + $"customer/home/orderconfirm?id={cartViewModel.orderheader.ID}",
-                //    CancelUrl = domainName + $"customer/cart/index",
+                    
+                //    SuccessUrl = domain+$"customer/home/orderconfirm?id={cartViewModel.orderheader.ID}",
+                //    CancelUrl = domain+$"customer/cart/index",
                 //};
 
                 ////Get All Data From 
 
                 //foreach (var itemcart in cartViewModel.carts)
                 //{
-                //    var sessionlineoption = new SessionLineItemOptions
+                //    var sessionlineItem = new SessionLineItemOptions
                 //    {
 
                 //        PriceData = new SessionLineItemPriceDataOptions
@@ -254,7 +268,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
 
                 //    };
-                //    options.LineItems.Add(sessionlineoption);
+                //    options.LineItems.Add(sessionlineItem);
                 //}
 
                 //var service = new Stripe.Checkout.SessionService();
@@ -287,7 +301,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
                 unitOfWork.orderHeader.UpdateStatusOrder(id, SD.Approve, SD.Approve);
 
                 //PaymentIntentId Applay After 
-                //orderHeader.PaymentIntentId = session.PaymentIntentId;
+                orderHeader.PaymentIntentId = session.PaymentIntentId;
 
                 unitOfWork.complete();
 
@@ -299,6 +313,11 @@ namespace Shopping.Web.Areas.Customer.Controllers
             List<ShoppingCart> shoppingCarts = unitOfWork.cart.Get(x => x.UserID == orderHeader.NameUserID).ToList();
 
             unitOfWork.cart.DeleteRange(shoppingCarts);
+
+
+            //I Want Delete Session
+            HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID ==  orderHeader.NameUserID).ToList().Count());
+
             unitOfWork.complete();
             return View(id);
 
