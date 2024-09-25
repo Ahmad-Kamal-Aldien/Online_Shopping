@@ -331,6 +331,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
             unitOfWork.cart.IncreaseNum(OldData,1);
             unitOfWork.complete();
             //return RedirectToAction("Index");
+            HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == OldData.UserID).ToList().Count());
 
             return RedirectToAction(nameof(GetCart));
 
@@ -356,6 +357,8 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
 
                 unitOfWork.complete();
+                HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == OldData.UserID).ToList().Count());
+
 
                 return RedirectToAction("Index");
             }
@@ -364,6 +367,8 @@ namespace Shopping.Web.Areas.Customer.Controllers
                 unitOfWork.cart.DecreaseNum(OldData, 1);
                 unitOfWork.complete();
                 //return RedirectToAction("Index");
+                HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == OldData.UserID).ToList().Count());
+
 
                 return RedirectToAction(nameof(GetCart));
             }
