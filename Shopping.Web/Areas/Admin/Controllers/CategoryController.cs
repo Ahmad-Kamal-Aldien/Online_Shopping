@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Shopping.DataAccessLayer.Data;
 using Shopping.DataAccessLayer.Repositorys.IRepository;
 using Shopping.Entites.Model;
+using Shopping.Utilities;
 using System.Security.Claims;
 
 namespace Shopping.Web.Areas.Admin.Controllers
 {
+    [Authorize(Roles =SD.Admin)]  
   
-  
+    
     [Area("Admin")]
     public class CategoryController : Controller
     {

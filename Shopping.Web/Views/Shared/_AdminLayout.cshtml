@@ -51,10 +51,15 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                   @*  <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
-                    </button>
+                    </button> *@
+
+                    <a type="button" id="sidebarCollapse" class="btn btn-info" asp-area="Customer" asp-action="index" asp-controller="Home">
+                        <i class="fas fa-align-left"></i>
+                        <span>Products</span>
+                    </a>
 
                     <ul class="navbar-nav ml-auto">
                         <!-- Navbar Search -->

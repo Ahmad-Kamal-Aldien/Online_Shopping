@@ -11,6 +11,7 @@ using System.Security.Claims;
 
 namespace Shopping.Web.Areas.Admin.Controllers
 {
+    [Authorize(Roles = SD.Admin)]
     [Area("Admin")]
 
     //[Authorize(Roles = SD.Admin)]

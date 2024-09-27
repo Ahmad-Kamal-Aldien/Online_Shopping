@@ -20,12 +20,21 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#!">Start Bootstrap</a>
+            <a class="navbar-brand" asp-area="Admin" asp-controller="Home" asp-action="Information" >Onlie Shopping</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Product</a></li>
-             
+                    <li class="nav-item"><a asp-area="Customer" asp-action="index" asp-controller="Home"
+                        class="nav-link active" aria-current="page">Product</a></li>
+
+                    @if (User.IsInRole(SD.Admin))
+                    {
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-controller="Home"  asp-action="index"
+                               class="nav-link active" aria-current="page">Dash Board</a>
+                        </li>
+                    }
+
                   
                 </ul>
 
@@ -63,12 +72,10 @@
     <!-- Section-->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
                 @RenderBody()     
            
            
-            </div>
         </div>
     </section>
     <!-- Footer-->

@@ -4,43 +4,46 @@
 @using Shopping.Entites.Model;
 @model IEnumerable<Product>
 
+    <link rel="stylesheet" href="~/css/product.css" />
 
+<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                @foreach (var item in Model)
+        {
+            <div class="col my-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="~/@item.Image" class="card-img-top" alt="...">
 
-    @foreach (var item in Model)
-    {
-        <div class="col mb-5">
-            <div class="card h-100">
-
-                <!-- Product image-->
-                <img class="card-img-top" src="~/@item.Image" alt="..." />
-                <!-- Product details-->
-                <div class="card-body p-4">
-                    <div class="text-center">
-                        <!-- Product name-->
-                        <h5 class="fw-bolder">@item.Name</h5>
-                        <!-- Product price-->
-                        @item.Price
+                    <div class="card-body">
+                        <div class="clearfix mb-3">
+                            <span class="float-start badge rounded-pill bg-primary">@item.Name</span>
+                            <span class="float-end price-hp"> @item.Price&euro;</span>
+                        </div>
+                        <h5 class="card-title">
+                            @item.Description
+                        </h5>
+                        <div class="text-center my-4">
+                            <a asp-action="Details" asp-route-proid="@item.Id" class="btn btn-warning">Details</a>
+                        </div>
+                        <div class="text-center my-4">
+                            <a class="btn btn-warning">Add To Cart</a>
+                        </div>
                     </div>
-                </div>
-                <!-- Product actions-->
-                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                    <a class="btn btn-outline-dark mt-auto" asp-action="Details" asp-route-proid="@item.Id">Details</a>
-
-
-
-                    <a class="btn btn-outline-dark mt-auto">Add To Card</a>
                 </div>
             </div>
 
+        }
         </div>
-
-    }
-
-
+</div>
+<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
     @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page = page }),
             new PagedListRenderOptions
     {
         LiElementClasses = new string[] { "page-item" },
         PageClasses = new string[] { "page-link" }
     })
+</div>
+
+
+
+
 

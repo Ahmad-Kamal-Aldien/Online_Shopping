@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Shopping.DataAccessLayer.Repositorys.IRepository;
 using Shopping.Entites.Model;
 using Shopping.Entites.Model.ViewModels;
+using Shopping.Utilities;
 using X.PagedList;
 
 namespace Shopping.Web.Areas.Admin.Controllers
 {
+    [Authorize(Roles = SD.Admin)]
     [Area("Admin")]
     public class ProductController : Controller
     {
