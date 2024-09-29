@@ -57,7 +57,6 @@ if (!app.Environment.IsDevelopment())
 ////To Make Stripe
 StripeConfiguration.ApiKey = builder.Configuration.GetSection("SecretKey").Get<string>();
 
-//StripeConfiguration.ApiKey = "sk_test_51Q1xDPDQrDnTT2Xu71iEtK8uIUkK5G8u9YZPlv1AUbmO3rqT8bXitx6SdMBSaROAyMYDqPWPR2t7wOenuwdXYWEh00bro9rU5b";
 
 
 
