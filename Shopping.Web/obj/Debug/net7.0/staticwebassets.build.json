@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C5//uJ0b9u6PSiiNS/41czLy1c96asqYpj3+uZht6j0=",
+  "Hash": "AcJYWQcEpYB/XT0eXJ/60bfFDez9wJzIL07ORNp/q9o=",
   "Source": "Shopping.Web",
   "BasePath": "_content/Shopping.Web",
   "Mode": "Default",
@@ -1440,6 +1440,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\003bb338-645c-4b37-8590-80575f5904a3.jpg"
+    },
+    {
+      "Identity": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\wwwroot\\Images\\Products\\0fd448bf-7125-4efa-8b29-10e8d6091eb8.jpg",
+      "SourceId": "Shopping.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\wwwroot\\",
+      "BasePath": "_content/Shopping.Web",
+      "RelativePath": "Images/Products/0fd448bf-7125-4efa-8b29-10e8d6091eb8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\0fd448bf-7125-4efa-8b29-10e8d6091eb8.jpg"
     },
     {
       "Identity": "D:\\MY Projects  And Learning\\CV From Scratch\\2024\\Full-Stack\\SimpleShop\\Shopping.Web\\wwwroot\\Images\\Products\\2fad46c4-2800-49e1-b271-55ab9224d2bd.jpg",

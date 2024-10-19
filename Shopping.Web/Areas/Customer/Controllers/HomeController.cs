@@ -21,7 +21,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
 {
     [Area("Customer")]
     //Customer/Home/Index
-    
+
     public class HomeController : Controller
     {
         public IUnitOfWork unitOfWork;
@@ -41,7 +41,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
             return View(unitOfWork.product.Get().ToPagedList(pagenumber, pagesize));
         }
 
-    
+
 
 
 
@@ -56,8 +56,8 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
             CartViewModel cartViewModel = new CartViewModel()
             {
-                carts = unitOfWork.cart.Get(x => x.UserID == userid,include: "Product")
-                
+                carts = unitOfWork.cart.Get(x => x.UserID == userid, include: "Product")
+
             };
             decimal total;
             foreach (var item in cartViewModel.carts)
@@ -69,12 +69,15 @@ namespace Shopping.Web.Areas.Customer.Controllers
             return View(cartViewModel);
         }
         [HttpGet]
+
         public IActionResult Details(int ProID)
         {
+            
+            
 
             ShoppingCart shoppingCartViewModel = new ShoppingCart()
             {
-               ProID= ProID,
+                ProID = ProID,
                 Product = unitOfWork.product.GetFirst(x => x.Id == ProID, include: "Category"),
                 Count = 1
             };
@@ -85,10 +88,12 @@ namespace Shopping.Web.Areas.Customer.Controllers
         }
 
         [HttpPost]
-        [Authorize]
         public IActionResult Details(ShoppingCart shoppingCart)
         {
-
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "Account", new { area = "Identity" });
+            }
             var user = (ClaimsIdentity)User.Identity;
             var claim = user.FindFirst(ClaimTypes.NameIdentifier);
 
@@ -100,13 +105,13 @@ namespace Shopping.Web.Areas.Customer.Controllers
             var OldData = unitOfWork.cart.GetFirst(x => x.UserID == claim.Value &&
             x.ProID == shoppingCart.ProID
             );
-            
+
             if (OldData == null)
             {
                 unitOfWork.cart.Add(shoppingCart);
 
-             
-               
+
+
 
 
 
@@ -115,7 +120,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
             {
                 shoppingCart.Id = OldData.Id;
                 unitOfWork.cart.Update(shoppingCart);
-                
+
 
 
 
@@ -132,13 +137,13 @@ namespace Shopping.Web.Areas.Customer.Controllers
         }
         public IActionResult AddToCartDirect(int ProID)
         {
-            
+
             ShoppingCart shoppingCart = new ShoppingCart();
             var user = (ClaimsIdentity)User.Identity;
-            if(user.FindFirst(ClaimTypes.NameIdentifier) is null)
+            if (user.FindFirst(ClaimTypes.NameIdentifier) is null)
             {
-               
-               
+
+
                 return RedirectToAction("Login", "Account", new { area = "Identity" });
             }
             var claim = user.FindFirst(ClaimTypes.NameIdentifier);
@@ -175,11 +180,11 @@ namespace Shopping.Web.Areas.Customer.Controllers
             unitOfWork.complete();
             HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == claim.Value).ToList().Count());
             return RedirectToAction(nameof(Index));
-            
+
         }
         [HttpGet]
         public IActionResult CheckOut()
-            {
+        {
             var user = (ClaimsIdentity)User.Identity;
             var claim = user.FindFirst(ClaimTypes.NameIdentifier);
 
@@ -200,25 +205,25 @@ namespace Shopping.Web.Areas.Customer.Controllers
             return View(cartViewModel);
         }
 
-		CartViewModel cartViewModel;
-		[HttpPost]
+        CartViewModel cartViewModel;
+        [HttpPost]
 
         //Show Stripe And Fill Data  Customer Not Pay  
         //Redirect To Function orderconfirm
 
         public IActionResult CheckOut(OrderHeader orderHeader)
         {
-           
+
             var user = (ClaimsIdentity)User.Identity;
             var claim = user.FindFirst(ClaimTypes.NameIdentifier);
 
             string userid = claim.Value;
 
-			//CartViewModel cartViewModel = new CartViewModel()
-			 cartViewModel = new CartViewModel()
+            //CartViewModel cartViewModel = new CartViewModel()
+            cartViewModel = new CartViewModel()
 
-			{
-				carts = unitOfWork.cart.Get(x => x.UserID == userid, include: "Product"),
+            {
+                carts = unitOfWork.cart.Get(x => x.UserID == userid, include: "Product"),
                 //Initilize
                 orderheader = new()
 
@@ -229,7 +234,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
             cartViewModel.orderheader.NameUserID = userid;
 
 
-            cartViewModel.orderheader.Address= orderHeader.Address;
+            cartViewModel.orderheader.Address = orderHeader.Address;
 
             cartViewModel.orderheader.PaymentStatus = SD.Pending;
             cartViewModel.orderheader.orderStatus = SD.Pending;
@@ -240,7 +245,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
 
             cartViewModel.orderheader.PhoneNumber = orderHeader.PhoneNumber;
-           
+
             cartViewModel.orderheader.OrderDate = DateTime.Now;
 
             ////Allow Null
@@ -272,67 +277,67 @@ namespace Shopping.Web.Areas.Customer.Controllers
                 unitOfWork.complete();
             }
 
-                //Stripe Api 
-                //Stripe Api 
-                //Stripe Api 
-                //Stripe Api 
+            //Stripe Api 
+            //Stripe Api 
+            //Stripe Api 
+            //Stripe Api 
 
-                var domain = "https://localhost:44323/";
+            var domain = "https://localhost:44323/";
 
 
-                //var options = new Stripe.Checkout.SessionCreateOptions
-                //{
-                //    LineItems = new List<SessionLineItemOptions>(),
-                //    Mode = "payment",
-                //    SuccessUrl = domainName + $"customer/home/orderconfirm?id={cartViewModel.orderheader.ID}",
-                //    CancelUrl = domainName + $"customer/cart/index",
-                //};
+            //var options = new Stripe.Checkout.SessionCreateOptions
+            //{
+            //    LineItems = new List<SessionLineItemOptions>(),
+            //    Mode = "payment",
+            //    SuccessUrl = domainName + $"customer/home/orderconfirm?id={cartViewModel.orderheader.ID}",
+            //    CancelUrl = domainName + $"customer/cart/index",
+            //};
 
-                var options = new Stripe.Checkout.SessionCreateOptions
-                {
-                    PaymentMethodTypes = new List<string>
+            var options = new Stripe.Checkout.SessionCreateOptions
+            {
+                PaymentMethodTypes = new List<string>
                     {
                         "card",
                     },
 
-                    LineItems = new List<SessionLineItemOptions>(),
-                    Mode = "payment",
+                LineItems = new List<SessionLineItemOptions>(),
+                Mode = "payment",
 
-                    SuccessUrl = domain + $"Customer/Home/orderconfirm/{cartViewModel.orderheader.ID}",
-                    CancelUrl = domain + $"Customer/cart/index",
-                };
+                SuccessUrl = domain + $"Customer/Home/orderconfirm/{cartViewModel.orderheader.ID}",
+                CancelUrl = domain + $"Customer/cart/index",
+            };
 
-                //Get All Data From 
+            //Get All Data From 
 
-                foreach (var itemcart in cartViewModel.carts)
+            foreach (var itemcart in cartViewModel.carts)
+            {
+                var sessionlineItem = new SessionLineItemOptions
                 {
-                    var sessionlineItem = new SessionLineItemOptions
+
+                    PriceData = new SessionLineItemPriceDataOptions
                     {
 
-                        PriceData = new SessionLineItemPriceDataOptions
+                        UnitAmount = (long)(itemcart.Product.Price * 100),
+                        Currency = "usd",
+                        ProductData = new SessionLineItemPriceDataProductDataOptions
                         {
-
-                            UnitAmount = (long)(itemcart.Product.Price * 100),
-                            Currency = "usd",
-                            ProductData = new SessionLineItemPriceDataProductDataOptions
-                            {
-                                Name = itemcart.Product.Name,
-                            },
+                            Name = itemcart.Product.Name,
                         },
-                        Quantity = itemcart.Count,
+                    },
+                    Quantity = itemcart.Count,
 
 
 
-                    };
-                    options.LineItems.Add(sessionlineItem);
-                }
+                };
+                options.LineItems.Add(sessionlineItem);
+            }
 
-                var service = new Stripe.Checkout.SessionService();
-                Stripe.Checkout.Session session = service.Create(options);
+            var service = new Stripe.Checkout.SessionService();
+            Stripe.Checkout.Session session = service.Create(options);
 
-                cartViewModel.orderheader.SessionID = session.Id;
-                unitOfWork.complete();
-                Response.Headers.Add("Location", session.Url);
+            cartViewModel.orderheader.SessionID = session.Id;
+            unitOfWork.complete();
+            Response.Headers.Add("Location", session.Url);
             return new StatusCodeResult(303);
 
             //return RedirectToAction($"orderconfirm{cartViewModel.orderheader.ID}");
@@ -363,8 +368,8 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
                 unitOfWork.complete();
 
-               
-               
+
+
             }
 
             //Remove In Cart  Specific User Login 
@@ -374,7 +379,7 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
 
             //I Want Delete Session
-            HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID ==  orderHeader.NameUserID).ToList().Count());
+            HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == orderHeader.NameUserID).ToList().Count());
 
             unitOfWork.complete();
             return View(id);
@@ -383,10 +388,10 @@ namespace Shopping.Web.Areas.Customer.Controllers
         }
         public IActionResult Plus(int Id)
         {
-        
-            var OldData = unitOfWork.cart.GetFirst(x=>x.Id== Id);
-           
-            unitOfWork.cart.IncreaseNum(OldData,1);
+
+            var OldData = unitOfWork.cart.GetFirst(x => x.Id == Id);
+
+            unitOfWork.cart.IncreaseNum(OldData, 1);
             unitOfWork.complete();
             //return RedirectToAction("Index");
             HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == OldData.UserID).ToList().Count());
@@ -394,18 +399,18 @@ namespace Shopping.Web.Areas.Customer.Controllers
             return RedirectToAction(nameof(GetCart));
 
 
-     
+
 
 
         }
         public IActionResult Minus(int Id)
         {
-          
-            var OldData = unitOfWork.cart.GetFirst(x=>x.Id == Id);
+
+            var OldData = unitOfWork.cart.GetFirst(x => x.Id == Id);
 
             if (OldData.Count == 1)
             {
-              
+
 
 
                 unitOfWork.cart.Delete(OldData);
@@ -432,12 +437,12 @@ namespace Shopping.Web.Areas.Customer.Controllers
             }
 
 
-         
+
 
         }
-        public IActionResult Delete(ShoppingCart shoppingCart,int Id)
+        public IActionResult Delete(ShoppingCart shoppingCart, int Id)
         {
-           
+
             //User Hale Shla And Product He 
 
             var user = (ClaimsIdentity)User.Identity;
