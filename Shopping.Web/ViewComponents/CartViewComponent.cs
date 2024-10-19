@@ -22,18 +22,27 @@ namespace Shopping.Web.ViewComponents
             if (claim != null)
             {
                 //Get Current Count 
-                if (HttpContext.Session.GetInt32(SD.SessionCountCart) != null)
-                {
-                    return View(HttpContext.Session.GetInt32(SD.SessionCountCart));
+                //if (HttpContext.Session.GetInt32(SD.SessionCountCart) != null)
+                //{
 
-                }
-                else
-                {
+                //    return View(HttpContext.Session.GetInt32(SD.SessionCountCart));
+
+                //}
+                //else
+                //{
+                //    HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == claim.Value).ToList().Count());
+                //    return View(HttpContext.Session.GetInt32(SD.SessionCountCart));
+
+
+                //}
+
+              
                     HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == claim.Value).ToList().Count());
+
                     return View(HttpContext.Session.GetInt32(SD.SessionCountCart));
 
-
-                }
+              
+                
 
             }
             else

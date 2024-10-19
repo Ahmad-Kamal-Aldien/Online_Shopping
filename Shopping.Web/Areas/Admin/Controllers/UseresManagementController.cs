@@ -62,13 +62,14 @@ namespace Shopping.Web.Areas.Admin.Controllers
             }
             if(userid.LockoutEnd==null || userid.LockoutEnd < DateTime.Now)
             {
-                userid.LockoutEnd = DateTime.Now.AddHours(1);
+                userid.LockoutEnd = DateTime.Now.AddSeconds(50);
             }
             else
             {
                 userid.LockoutEnd= DateTime.Now;
             }
-            return View();
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
         }
     }
 }

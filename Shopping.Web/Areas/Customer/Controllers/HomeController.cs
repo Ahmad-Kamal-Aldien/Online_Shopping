@@ -14,6 +14,8 @@ using System.Security.Claims;
 using Stripe.Checkout;
 using Microsoft.Extensions.Options;
 using X.PagedList;
+using Stripe.Climate;
+using System.Drawing.Printing;
 
 namespace Shopping.Web.Areas.Customer.Controllers
 {
@@ -38,6 +40,10 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
             return View(unitOfWork.product.Get().ToPagedList(pagenumber, pagesize));
         }
+
+    
+
+
 
         [HttpGet]
         [Authorize]
@@ -124,7 +130,53 @@ namespace Shopping.Web.Areas.Customer.Controllers
 
 
         }
+        public IActionResult AddToCartDirect(int ProID)
+        {
+            
+            ShoppingCart shoppingCart = new ShoppingCart();
+            var user = (ClaimsIdentity)User.Identity;
+            if(user.FindFirst(ClaimTypes.NameIdentifier) is null)
+            {
+               
+               
+                return RedirectToAction("Login", "Account", new { area = "Identity" });
+            }
+            var claim = user.FindFirst(ClaimTypes.NameIdentifier);
 
+            shoppingCart.UserID = claim.Value;
+
+            //var OldData = unitOfWork.cart.GetFirst(x => x.UserID == claim.Value &&
+            // x.ProID == shoppingCart.ProID
+            // );
+            //var OldData = unitOfWork.cart.GetFirst(x => x.UserID == claim.Value &&
+            //x.ProID == shoppingCart.ProID
+            //);
+
+            var OldData = unitOfWork.cart.GetFirst(x => x.UserID == claim.Value &&
+          x.ProID == ProID
+          );
+
+            if (OldData == null)
+            {
+                shoppingCart.ProID = ProID;
+                shoppingCart.Count = 1;
+
+                unitOfWork.cart.Add(shoppingCart);
+
+            }
+            else
+            {
+                shoppingCart.Id = OldData.Id;
+                unitOfWork.cart.Update(shoppingCart);
+
+
+            }
+
+            unitOfWork.complete();
+            HttpContext.Session.SetInt32(SD.SessionCountCart, unitOfWork.cart.Get(x => x.UserID == claim.Value).ToList().Count());
+            return RedirectToAction(nameof(Index));
+            
+        }
         [HttpGet]
         public IActionResult CheckOut()
             {
@@ -183,6 +235,9 @@ namespace Shopping.Web.Areas.Customer.Controllers
             cartViewModel.orderheader.orderStatus = SD.Pending;
 
 
+            //cartViewModel.orderheader.PaymentStatus = SD.Approve;
+            //cartViewModel.orderheader.orderStatus = SD.Approve;
+
 
             cartViewModel.orderheader.PhoneNumber = orderHeader.PhoneNumber;
            
@@ -215,80 +270,83 @@ namespace Shopping.Web.Areas.Customer.Controllers
                 };
                 unitOfWork.orderDetails.Add(orderDetails);
                 unitOfWork.complete();
+            }
 
                 //Stripe Api 
                 //Stripe Api 
                 //Stripe Api 
                 //Stripe Api 
 
-                //var domain = "https://localhost:7133/";
+                var domain = "https://localhost:44323/";
 
-
-                ////var options = new Stripe.Checkout.SessionCreateOptions
-                ////{
-                ////    LineItems = new List<SessionLineItemOptions>(),
-                ////    Mode = "payment",
-                ////    SuccessUrl = domainName + $"customer/home/orderconfirm?id={cartViewModel.orderheader.ID}",
-                ////    CancelUrl = domainName + $"customer/cart/index",
-                ////};
 
                 //var options = new Stripe.Checkout.SessionCreateOptions
                 //{
-                //    PaymentMethodTypes=new List<string>
-                //    {
-                //        "card",
-                //    },
-
                 //    LineItems = new List<SessionLineItemOptions>(),
                 //    Mode = "payment",
-                    
-                //    SuccessUrl = domain+$"customer/home/orderconfirm?id={cartViewModel.orderheader.ID}",
-                //    CancelUrl = domain+$"customer/cart/index",
+                //    SuccessUrl = domainName + $"customer/home/orderconfirm?id={cartViewModel.orderheader.ID}",
+                //    CancelUrl = domainName + $"customer/cart/index",
                 //};
 
-                ////Get All Data From 
+                var options = new Stripe.Checkout.SessionCreateOptions
+                {
+                    PaymentMethodTypes = new List<string>
+                    {
+                        "card",
+                    },
 
-                //foreach (var itemcart in cartViewModel.carts)
-                //{
-                //    var sessionlineItem = new SessionLineItemOptions
-                //    {
+                    LineItems = new List<SessionLineItemOptions>(),
+                    Mode = "payment",
 
-                //        PriceData = new SessionLineItemPriceDataOptions
-                //        {
+                    SuccessUrl = domain + $"Customer/Home/orderconfirm/{cartViewModel.orderheader.ID}",
+                    CancelUrl = domain + $"Customer/cart/index",
+                };
 
-                //            UnitAmount = (long)(itemcart.Product.Price * 100),
-                //            Currency = "usd",
-                //            ProductData = new SessionLineItemPriceDataProductDataOptions
-                //            {
-                //                Name = itemcart.Product.Name,
-                //            },
-                //        },
-                //        Quantity = itemcart.Count,
+                //Get All Data From 
 
+                foreach (var itemcart in cartViewModel.carts)
+                {
+                    var sessionlineItem = new SessionLineItemOptions
+                    {
 
+                        PriceData = new SessionLineItemPriceDataOptions
+                        {
 
-                //    };
-                //    options.LineItems.Add(sessionlineItem);
-                //}
-
-                //var service = new Stripe.Checkout.SessionService();
-                //Stripe.Checkout.Session session = service.Create(options);
-
-                //cartViewModel.orderheader.SessionID = session.Id;
-                //unitOfWork.complete();
-                //Response.Headers.Add("Location", session.Url);
-                //return new StatusCodeResult(303);
-
-
-
-            }
+                            UnitAmount = (long)(itemcart.Product.Price * 100),
+                            Currency = "usd",
+                            ProductData = new SessionLineItemPriceDataProductDataOptions
+                            {
+                                Name = itemcart.Product.Name,
+                            },
+                        },
+                        Quantity = itemcart.Count,
 
 
 
+                    };
+                    options.LineItems.Add(sessionlineItem);
+                }
 
-            return RedirectToAction("Index");
+                var service = new Stripe.Checkout.SessionService();
+                Stripe.Checkout.Session session = service.Create(options);
+
+                cartViewModel.orderheader.SessionID = session.Id;
+                unitOfWork.complete();
+                Response.Headers.Add("Location", session.Url);
+            return new StatusCodeResult(303);
+
+            //return RedirectToAction($"orderconfirm{cartViewModel.orderheader.ID}");
+
+
+
+
+
+
+
+
         }
         //Customer Pay Money and Change Status From Pending To Approve
+        [Authorize]
         public IActionResult orderconfirm(int id)
         {
             OrderHeader orderHeader = unitOfWork.orderHeader.GetFirst(x => x.ID == id);

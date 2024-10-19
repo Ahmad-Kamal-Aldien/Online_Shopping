@@ -108,7 +108,8 @@ h2 {
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
-    padding: 5px 50px 5px 50px
+    /*padding: 5px 50px 5px 50px*/
+    padding: 5px 5px 5px 5px;
 }
 
 .box .btn {
@@ -117,13 +118,15 @@ h2 {
 
 @media (max-width: 1025px) {
     .btn {
-        padding: 5px 40px 5px 40px
+        /*padding: 5px 40px 5px 40px;*/
+        padding: 5px 5px 5px 5px;
     }
 }
 
 @media (max-width: 250px) {
     .btn {
-        padding: 5px 30px 5px 30px
+        /*padding: 5px 30px 5px 30px*/
+        padding: 5px 5px 5px 5px;
     }
 }
 

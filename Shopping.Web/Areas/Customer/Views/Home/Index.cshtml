@@ -16,24 +16,33 @@
                     <div class="card-body">
                         <div class="clearfix mb-3">
                             <span class="float-start badge rounded-pill bg-primary">@item.Name</span>
-                            <span class="float-end price-hp"> @item.Price&euro;</span>
+                        <span class="float-end price-hp"> @item.Price&dollar;</span>
                         </div>
                         <h5 class="card-title">
                             @item.Description
                         </h5>
-                        <div class="text-center my-4">
+                      @*   <div class="text-center my-4">
                             <a asp-action="Details" asp-route-proid="@item.Id" class="btn btn-warning">Details</a>
                         </div>
                         <div class="text-center my-4">
                         <a asp-action="Details" asp-route-proid="@item.Id" class="btn btn-warning">Add To Cart</a>
+                        </div> *@
+
+
+                          <div class="my-4  row">
+                        <a asp-action="Details" asp-route-proid="@item.Id" class="btn btn-info col-4 mx-2">Details</a>
+                        <a asp-action="AddToCartDirect" asp-route-proid="@item.Id" class="btn btn-secondary col-7">Add To Cart</a>
                         </div>
+                       
+
+
                     </div>
                 </div>
             </div>
 
         }
         </div>
-</div>
+
 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
     @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page = page }),
             new PagedListRenderOptions
